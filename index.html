@@ -15,7 +15,16 @@
         <span class="placeholder">Enter Password</span>
       </label>
       <div class="btn-grnt">
-        <button id="grn" onclick="setData(); find();">Generate</button>
+        <button onclick="setData(); find();">Generate</button>
+
+        <button
+          class="tooltip"
+          onclick="copyToClipboard()"
+          onmouseout="outMousefun()"
+        >
+          <span class="tooltiptext" id="ttp">Copy To Clipboard</span>
+          Copy
+        </button>
       </div>
       <div class="progress-container">
         <div class="progress-bar" id="progressBar"></div>
