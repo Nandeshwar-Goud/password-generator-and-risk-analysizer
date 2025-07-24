@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password analayiser</title>
+  </head>
+  <body>
+    <div class="con">
+      <h1>Password Generator</h1>
+      <div id="gen"></div>
+      <label class="custom-field one">
+        <input type="text" placeholder=" " id="pass" oninput="find()" />
+        <span class="placeholder">Enter Password</span>
+      </label>
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+
+      <p class="strength-label" id="strengthScore"></p>
+      <p class="checks" id="checkList"></p>
+      <p class="entropy" id="entropyResult"></p>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
